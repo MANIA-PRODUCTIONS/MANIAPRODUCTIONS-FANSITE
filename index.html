@@ -16,13 +16,14 @@
             overflow-x: hidden;
         }
 
+        /* ヘッダーを350pxに縮小 */
         header {
             width: 100%;
-            height: 500px;
+            height: 350px;                                      /* ← ここを小さく */
             background: url('MANIAPRODUCTIONS-LOGO.jpeg') center/cover no-repeat;
         }
 
-        .spacer { height: 160px; }
+        .spacer { height: 100px; }                             /* ヘッダー小さくした分、空白も少し減らす */
 
         main { max-width: 1000px; margin: 0 auto; padding: 0 20px; text-align: center; }
 
@@ -31,15 +32,14 @@
             font-size: 2.5rem;
             letter-spacing: 0.25em;
             color: #ccc;
-            margin: 100px 0 140px;
+            margin: 80px 0 120px;
             opacity: 0.75;
         }
 
-        /* ここから追加・修正：完全中央固定＋傾き演出 */
+        /* 画像を img_1.jpeg に変更＋完全中央＋カタッと傾く */
         .img-wrapper {
             display: flex;
-            justify-content: center;   /* 横方向完全中央 */
-            align-items: center;       /* 縦方向も中央（必要なら） */
+            justify-content: center;
             perspective: 1000px;
             margin: 0 auto 120px;
             width: 100%;
@@ -58,7 +58,6 @@
             transform: rotate(3deg) translateY(8px);
         }
 
-        /* 説明文以下は変更なし */
         .description {
             max-width: 720px;
             margin: 0 auto;
@@ -91,9 +90,9 @@
     <main>
         <h2 class="section-title">開発中のゲーム</h2>
 
-        <!-- 完全中央固定＋カタッと傾く -->
+        <!-- ここで画像を img_1.jpeg に変更 -->
         <div class="img-wrapper">
-            <img src="0.0035%-img.jpeg" alt="0.0035%" class="probability-img">
+            <img src="img_1.jpeg" alt="teaser image" class="probability-img">
         </div>
 
         <div class="description">
