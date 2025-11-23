@@ -82,6 +82,12 @@
             transform: rotate(3.5deg) translateY(12px);
         }
 
+        /* クリック時のカーソル（ポインタ） */
+        .frame-link {
+            cursor: pointer;
+            text-decoration: none;
+        }
+
         .description {
             max-width: 720px;
             margin: 0 auto;
@@ -131,10 +137,13 @@
     <main>
         <h2 class="section-title">開発中のゲーム</h2>
 
+        <!-- 額縁全体をリンク化（新規タブで開く） -->
         <div class="frame-container">
-            <div class="gold-frame">
-                <img src="img_1.jpeg" alt="0.0035%">
-            </div>
+            <a href="https://x.com/webmaniapro/status/1992563723815514565" target="_blank" rel="noopener noreferrer" class="frame-link">
+                <div class="gold-frame">
+                    <img src="img_1.jpeg" alt="0.0035%">
+                </div>
+            </a>
         </div>
 
         <div class="description">
